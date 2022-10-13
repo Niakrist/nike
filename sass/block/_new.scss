@@ -1,0 +1,74 @@
+.new {
+  margin-bottom: 70px;
+}
+.new__row {
+  position: relative;
+  top: -30px;
+  display: flex;
+  justify-content: space-between;
+}
+.row__item {
+  width: 610px;
+  height: 272px;
+  background: #EFEFEF;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  position: relative;
+  
+   a {
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 35px;
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -120px;
+    rotate: -35deg;
+    background-image: url('../img/boot-01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 300px;
+  }
+
+
+
+}
+
+.row__content {
+  padding: 60px 0 25px 60px;
+
+
+  span {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 48px;
+    line-height: 1.122;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #FF3939;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    max-width: 228px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: 0.01em;
+  }
+
+
+  
+}

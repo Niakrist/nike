@@ -1,0 +1,293 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+body {
+  font-family: Montserrat; }
+
+img {
+  max-width: 100%; }
+
+.header__nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header__nav a {
+    font-size: 32px;
+    line-height: 1.218;
+    font-weight: 40;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #A0A0A0; }
+    .header__nav a span {
+      color: #000;
+      font-weight: 700; }
+
+.nav__gender a {
+  padding-bottom: 11px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  position: relative; }
+.nav__gender a:not(:last-child) {
+  margin-right: 50px; }
+.nav__gender a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.2s ease-in; }
+.nav__gender a:hover::after {
+  width: 100%; }
+
+.accaunt a:not(:last-child) {
+  margin-right: 50px; }
+.accaunt a img {
+  object-fit: cover; }
+
+.header__bg {
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header__bg--line {
+  width: 100%;
+  background-image: url("../img/hero-logo.jpg");
+  height: 60px; }
+
+.header__bg--content {
+  max-width: 560px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #fff; }
+  .header__bg--content h1 {
+    padding-top: 60px;
+    padding-bottom: 29px;
+    font-size: 40px;
+    text-transform: uppercase; }
+  .header__bg--content p {
+    font-size: 20px;
+    margin-bottom: 30px; }
+
+.btn {
+  padding: 10px 26px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  background-color: #fff;
+  border-radius: 16px; }
+
+.bg {
+  position: relative; }
+  .bg img {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.2);
+    filter: blur(7.5px);
+    border-radius: 0px; }
+  .bg::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/nike.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 370px;
+    height: 131px; }
+
+.new {
+  margin-bottom: 70px; }
+
+.new__row {
+  position: relative;
+  top: -30px;
+  display: flex;
+  justify-content: space-between; }
+
+.row__item {
+  width: 610px;
+  height: 272px;
+  background: #EFEFEF;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  position: relative; }
+  .row__item a {
+    width: 55px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 35px;
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .row__item::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -120px;
+    rotate: -35deg;
+    background-image: url("../img/boot-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 300px; }
+
+.row__content {
+  padding: 60px 0 25px 60px; }
+  .row__content span {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 48px;
+    line-height: 1.122;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #FF3939; }
+  .row__content h2 {
+    margin-bottom: 15px;
+    max-width: 228px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: 0.01em; }
+
+.top__content {
+  text-align: center;
+  margin-bottom: 102px; }
+  .top__content p {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.225; }
+  .top__content h2 {
+    margin-bottom: 30px;
+    font-size: 80px;
+    line-height: 1.225;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase; }
+
+.top__title {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between; }
+  .top__title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.225; }
+
+.top__title--nav {
+  display: flex;
+  column-gap: 25px; }
+
+.top__title--nav--right,
+.top__title--nav--left {
+  width: 55px;
+  height: 55px;
+  background-color: #F5F5F5;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2 ease; }
+  .top__title--nav--right:hover,
+  .top__title--nav--left:hover {
+    background-color: #C6C6C6; }
+
+.top__cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px; }
+
+.cards__item {
+  padding: 0 0 67px 37px;
+  max-width: 392px;
+  background: #EFEFEF;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; }
+  .cards__item::after {
+    content: 'Nike';
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    transform: translate(-25%, -25%);
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 160px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.1);
+    transform: matrix(0, 1, -1, 0, 0, 0); }
+  .cards__item::before {
+    content: '';
+    position: absolute;
+    right: 45px;
+    bottom: 45px;
+    background-image: url("../img/arrow-in-round.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 55px;
+    height: 55px;
+    cursor: pointer; }
+
+.cards__item img {
+  position: relative;
+  right: 30px;
+  z-index: 2; }
+
+.cards__item:not(:last-child) img {
+  rotate: -35deg;
+  top: 75px; }
+
+.name--boot {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.175;
+  font-family: 'Work Sans'; }
+
+.price--boot {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.175;
+  font-family: 'Work Sans'; }
+
+/*# sourceMappingURL=main.css.map */
