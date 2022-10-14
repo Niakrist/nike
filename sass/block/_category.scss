@@ -1,0 +1,35 @@
+.category {
+  margin-bottom: 100px;
+}
+
+.category__title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.225;
+}
+.category__row {
+  display: flex;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+}
+
+.category__row--text {
+  width: 50%;
+  font-size: 36px;
+  line-height: 1.225;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  font-style: italic;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+.category__row--img {
+  width: 50%;
+}

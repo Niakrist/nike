@@ -40,6 +40,12 @@
   font-family: 'Montserrat';
   background-color: #fff;
   border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.2 ease-in;
+  
+  &:hover {
+    background-color: #cccccc;
+  }
 }
 
 .bg {

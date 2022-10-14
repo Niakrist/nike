@@ -1,0 +1,59 @@
+.more__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.225;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.more {
+  background-image: url('./../img/more.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.more__content {
+  max-width: 445px;
+  padding: 44px 0;
+}
+
+.more__content--title {
+  margin-bottom: 25px;
+  font-size: 40px;
+  line-height: 1.225;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.more__content--text {
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 1.225;
+  font-weight: 400;
+  color: #fff;
+
+  span {
+    font-weight: 700;
+  }
+
+}
+
+.more__btn {
+  padding: 10px 46px;
+  font-size: 16px;
+  line-height: 1.225;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #CCC;
+  }
+
+}
